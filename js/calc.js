@@ -9,7 +9,7 @@ function sendNum(digit){
 
 	if(num.length != 1){
 		a = '';
-		document.getElementById('screen').innerHTML = a;		
+		document.getElementById('display').innerHTML = a;		
 	}
 
 
@@ -18,12 +18,12 @@ function sendNum(digit){
 		a = a + num[i];				
 	}
 
-document.getElementById('screen').innerHTML = a;	
+document.getElementById('display').innerHTML = a;	
 	
 }
 
 function equalTo(){
-	document.getElementById('screen').innerHTML = '';
+	document.getElementById('display').innerHTML = '';
 
 	for(i=0; i<num.length ; i++){
 
@@ -32,7 +32,7 @@ function equalTo(){
 
 	ans = eval(b);	
 
-	document.getElementById('screen').innerHTML = ans;		
+	document.getElementById('display').innerHTML = ans;		
 
 	while(num.length > 0){
     	num.pop();				
@@ -45,7 +45,7 @@ function equalTo(){
 
 
 function clearScr(){
-	document.getElementById('screen').innerHTML = '';
+	document.getElementById('display').innerHTML = '';
 	
 	while(num.length > 0){
     	num.pop();				
@@ -65,11 +65,11 @@ console.log(num);
 
 	if(num.length != 1){
 		a = '';
-		document.getElementById('screen').innerHTML = a;		
+		document.getElementById('display').innerHTML = a;		
 	}
 
 
 
-document.getElementById('screen').innerHTML = num.join('');	
+document.getElementById('display').innerHTML = num.join('');	
 
 }
